@@ -1,13 +1,19 @@
-body {
-  background-color: #101010;
-  color: #ffffff;
+:root {
+  /* this has to be set to switch between light or dark */
+  color-scheme: light dark;
+
+  --light-bg: ghostwhite;
+  --light-color: darkslategray;
+  --light-code: tomato;
+
+  --dark-bg: darkslategray;
+  --dark-color: ghostwhite;
+  --dark-code: gold;
 }
-h1 {
-  color: #ffffff;
+* {
+  background-color: light-dark(var(--light-bg), var(--dark-bg));
+  color: light-dark(var(--light-color), var(--dark-color));
 }
-nav a {
-  color: #ffffff;
-}
-footer {
-  color: #ffffff;
+code {
+  color: light-dark(var(--light-code), var(--dark-code));
 }
