@@ -11,3 +11,9 @@ nav a {
 footer {
   color: #ffffff;
 }
+
+p.glow {
+  color: #50FFFF;
+  font-size: 16px;
+  text-shadow: 0px 0px 2px #1040FF, -2px -2px 2px #1040FF, 2px -2px 2px #1040FF, -2px 2px 2px #1040FF, 2px 2px 2px #1040FF;
+}
